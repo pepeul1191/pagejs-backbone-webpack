@@ -5,8 +5,8 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 var entries = {
   // main: ['./resources/entries/index.jsx'],
-  index: ['./resources/entries/index.js'],
-  admin: ['./resources/entries/admin.js'],
+  index: ['./resources/routes/index.js'],
+  admin: ['./resources/routes/admin.js'],
   vendors: ['backbone', 'jquery', 'underscore', 'page'],
   // vendors_login: ['jquery', ],
 };
