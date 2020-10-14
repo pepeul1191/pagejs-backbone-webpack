@@ -42,3 +42,5 @@ Fuentes:
 
 + https://github.com/pepeul1191/webpack-aprendiendo3
 + https://github.com/visionmedia/page.js/blob/master/examples/basic/index.html
++ https://stackoverflow.com/questions/11557526/deserialize-query-string-to-json-object
++ https://visionmedia.github.io/page.js/

@@ -4,17 +4,18 @@ const webpack = require('webpack');
 
 var entries = {
   // main: ['./resources/entries/index.jsx'],
-  demo: ['./resources/routes/demo.js'],
-  // vendors: ['backbone', 'jquery', 'underscore', ],
+  index: ['./resources/entries/index.js'],
+  vendors: ['backbone', 'jquery', 'underscore', 'page'],
   // vendors_login: ['jquery', ],
 };
 
 var plugins = [
   new webpack.ProvidePlugin({
     // import globally this libs
-    /*'$': 'jquery',
+    '$': 'jquery',
     'Backbone': 'backbone',
-    '_': 'underscore',*/
+    '_': 'underscore',
+    'page': 'page',
     //'React': 'react',
     //'ReactDOM': 'react-dom',
     //'axios': 'axios',

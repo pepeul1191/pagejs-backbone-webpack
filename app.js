@@ -17,9 +17,20 @@ app.use(fileUpload());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+// forward functions
+var home = function(req, res, next) {
+  res.render('home', { 
+    title: 'Home', 
+  });
+};
+// routes
+app.get('/', home);
+app.get('/about', home);
+app.get('/contact', home);
+app.get('/contact/:name', home);
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
-  var response = 'Recurso no encontrado';
+  var response = '404: Recurso no encontrado';
   res.status(404).send(response);
 });
 // export app
