@@ -5,6 +5,7 @@ const webpack = require('webpack');
 var entries = {
   // main: ['./resources/entries/index.jsx'],
   index: ['./resources/entries/index.js'],
+  admin: ['./resources/entries/admin.js'],
   vendors: ['backbone', 'jquery', 'underscore', 'page'],
   // vendors_login: ['jquery', ],
 };
