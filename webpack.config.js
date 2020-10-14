@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require('webpack');
+const CopyPlugin = require('copy-webpack-plugin');
 
 var entries = {
   // main: ['./resources/entries/index.jsx'],
@@ -27,6 +28,13 @@ var plugins = [
     filename: '[name].css',
     chunkFilename: '[id].css'
   }),
+  new CopyPlugin([
+    // move ejs files to public
+    { 
+      from: path.resolve(__dirname, 'resources/templates'), 
+      to: path.resolve(__dirname, 'public/templates')
+    },
+  ]),
 ];
 
 var outputDevelopment = {

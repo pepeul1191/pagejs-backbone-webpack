@@ -44,3 +44,4 @@ Fuentes:
 + https://github.com/visionmedia/page.js/blob/master/examples/basic/index.html
 + https://stackoverflow.com/questions/11557526/deserialize-query-string-to-json-object
 + https://visionmedia.github.io/page.js/
++ https://stackoverflow.com/questions/52478834/copy-webpack-plugin-doesnt-copy-files

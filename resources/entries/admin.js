@@ -1,3 +1,6 @@
+import StudentView from '../views/student_view';
+import TeacherView from '../views/teacher_view';
+
 function queryStringToJSON(qs) {
   qs = qs || location.search.slice(1);
 
@@ -41,13 +44,15 @@ function index(ctx, next) {
 }
 
 function student(ctx, next) {
-  document.querySelector('p')
-    .textContent = 'viewing student admin';
+  var studentView = new StudentView();
+  studentView.render();
+  studentView.loadComponents();
 }
 
 function teacher(ctx, next) {
-  document.querySelector('p')
-    .textContent = 'viewing teacher admin';
+  var teacherView = new TeacherView();
+  teacherView.render();
+  teacherView.loadComponents();
 }
 
 function notfound(ctx, next) {

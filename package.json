@@ -31,6 +31,7 @@
     "nodemon": "^1.18.9",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9",
+    "copy-webpack-plugin": "^5.1.1",
     "webpack-dev-server": "^3.8.1",
     "@babel/core": "^7.6.4",
     "@babel/plugin-transform-runtime": "^7.7.4",
