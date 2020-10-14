@@ -24,16 +24,20 @@ function queryStringToJSON(qs) {
 
 page.base('/admin');
 
-page('', index);
+page('', loading, index);
 page('/student', student);
 page('/teacher', teacher);
 page('*', notfound)
 page();
 
+function loading(ctx, next){
+  alert('loading...');
+  next();
+}
+
 function index(ctx, next) {
   document.querySelector('p')
     .textContent = 'viewing index admin';
-  alert('index');
 }
 
 function student(ctx, next) {
